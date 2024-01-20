@@ -2,8 +2,8 @@
 #  GigStack: Technical Challenge for Full-Stack Developers
 
 #### Requirements  
-Node 18
-Firebase
+* Node 18
+* Firebase
 
 #### How to run the project
 1. Complete the ```.env``` file, I have provided a .env.example file to guide you.

@@ -2,8 +2,8 @@
 #  GigStack: Technical Challenge for Full-Stack Developers
 
 #### Requirements  
-Node 18
-Firebase
+* Node 18
+* Firebase
 
 #### How to run the project
 
