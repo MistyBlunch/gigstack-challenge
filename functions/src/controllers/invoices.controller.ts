@@ -19,13 +19,11 @@ export class InvoicesController {
   };
 
   createGlobalInvoices = async () => {
-    console.log('La función createGlobalInvoices se empezara a ejecutar.');
     this.configService.loadConfig();
 
     this.paymentService.readJsonData();
     await this.paymentService.parseAndSplitData();
     await this.paymentService.createInvoices();
-    console.log('La función createGlobalInvoices se ha ejecutado.');
   };
 
   retrieveGlobalInvoices = async (req: Request, res: Response) => {

@@ -13,7 +13,6 @@ import { useNavigate } from 'react-router-dom'
 const { Sider } = Layout
 
 type MenuItem = Required<MenuProps>['items'][number]
-// TODO
 function getItem(
   label: React.ReactNode,
   key: React.Key,
