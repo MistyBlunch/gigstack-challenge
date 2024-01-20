@@ -19,6 +19,16 @@
 	
 #### Server Details
 
+To create all Global Invoives mannualy you need to make a GET request in favorite your API Platform:
+- _GET:_ http://127.0.0.1:4000/gigstack-te/us-central1/createGlobalInvoices
+
+  - Output
+
+    ```json
+    {
+		"status": "ok"
+	}
+    ```
 If you want to see all the payments:
 - _GET:_ http://127.0.0.1:4000/gigstack-te/us-central1/retrievePayments
 

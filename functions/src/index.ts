@@ -17,7 +17,13 @@ const paymentService = new PaymentService(configService, httpService, eCommerceR
 const invoicesController = new InvoicesController(paymentService, configService);
 
 export const retrievePayments = onRequest(invoicesController.retrievePayments);
-export const createGlobalInvoices = runWith({timeoutSeconds: 300})
+export const createGlobalInvoices = onRequest({
+  timeoutSeconds: 300,
+}, (req, res) => {
+  invoicesController.createGlobalInvoices();
+  res.json({status: 'OK'});
+});
+export const createGlobalInvoicesProgrammed = runWith({timeoutSeconds: 300})
   .pubsub
   .schedule('59 23 28-31 * *')
   .timeZone('America/Mexico_City')
