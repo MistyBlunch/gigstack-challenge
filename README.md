@@ -69,3 +69,4 @@ Note: You can use the following configuration for the global invoice:
 - [ExchangeRate-API](https://www.exchangerate-api.com/)
 - [Atomic Web Design](https://bradfrost.com/blog/post/atomic-web-design)
 - [Gigstack](https://gigstack.pro)
+
